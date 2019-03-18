@@ -27,7 +27,7 @@ function printString() {
 // ● целого числа в строку
 
 function intToString(value) {
-  if (!(Number(value) === value && value % 1 == 0)) {
+  if (!(Number(value) === value && value % 1 === 0)) {
     return undefined;
   }
   let resultString = "";
@@ -52,7 +52,7 @@ function floatToString(value) {
 // ●  строки в целое число
 
 function stringToInt(value) {
-  if (typeof value != "string") {
+  if (typeof value !== "string") {
     return NaN;
   }
   let resultInt = parseInt(value);
@@ -63,7 +63,7 @@ function stringToInt(value) {
 // ●  строки в вещественное число
 
 function stringToFloat(value) {
-  if (typeof value != "string") {
+  if (typeof value !== "string") {
     return NaN;
   }
   let resultFloat = parseFloat(value);
@@ -85,7 +85,7 @@ function trimSymbolRegex(value) {
 //  ● Дана строка, состоящая из слов, разделенных пробелами и знаками препинания. Определить длину самого короткого слова.
 
 function findMinWordInString(value) {
-  if (typeof value != "string") {
+  if (typeof value !== "string") {
     return undefined;
   }
   let curString = value;
@@ -120,7 +120,7 @@ function changeWordsInMas(arr, length, symbol) {
 //  ● Добавить в строку пробелы после знаков препинания, если они там отсутствуют.
 
 function addSpaceAfterRegEx(value) {
-  if (typeof value != "string") {
+  if (typeof value !== "string") {
     return undefined;
   }
   const regExp = "!.,;:?";
@@ -143,7 +143,7 @@ function addSpaceAfterRegEx(value) {
 //  ● Оставить в строке только один экземпляр каждого встречающегося символа.
 
 function singleToneCharAtString(value) {
-  if (typeof value != "string") {
+  if (typeof value !== "string") {
     return undefined;
   }
   let resStr = "";
@@ -160,7 +160,7 @@ function singleToneCharAtString(value) {
 //  ● Подсчитать количество слов во введенной пользователем строке.
 
 function countWordInString(value) {
-  if (typeof value != "string") {
+  if (typeof value !== "string") {
     return undefined;
   }
   let curString = value;

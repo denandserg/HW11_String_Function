@@ -35,7 +35,7 @@ function printString() {
 
 
 function intToString(value) {
-  if (!(Number(value) === value && value % 1 == 0)) {
+  if (!(Number(value) === value && value % 1 === 0)) {
     return undefined;
   }
 
@@ -59,7 +59,7 @@ function floatToString(value) {
 
 
 function stringToInt(value) {
-  if (typeof value != "string") {
+  if (typeof value !== "string") {
     return NaN;
   }
 
@@ -70,7 +70,7 @@ function stringToInt(value) {
 
 
 function stringToFloat(value) {
-  if (typeof value != "string") {
+  if (typeof value !== "string") {
     return NaN;
   }
 
@@ -88,7 +88,7 @@ function trimSymbolRegex(value) {
 
 
 function findMinWordInString(value) {
-  if (typeof value != "string") {
+  if (typeof value !== "string") {
     return undefined;
   }
 
@@ -122,7 +122,7 @@ function changeWordsInMas(arr, length, symbol) {
 
 
 function addSpaceAfterRegEx(value) {
-  if (typeof value != "string") {
+  if (typeof value !== "string") {
     return undefined;
   }
 
@@ -149,7 +149,7 @@ function addSpaceAfterRegEx(value) {
 
 
 function singleToneCharAtString(value) {
-  if (typeof value != "string") {
+  if (typeof value !== "string") {
     return undefined;
   }
 
@@ -168,7 +168,7 @@ function singleToneCharAtString(value) {
 
 
 function countWordInString(value) {
-  if (typeof value != "string") {
+  if (typeof value !== "string") {
     return undefined;
   }
 

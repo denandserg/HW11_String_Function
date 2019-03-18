@@ -4,7 +4,7 @@
     "scripts": {
         "start": "gulp",
         "clean": "gulp clean",
-        "mocha": "mocha",
+        "mocha": "mocha --reporter=nyan",
         "test-with-coverage": "nyc --reporter=html --reporter=text mocha --reporter=mochawesome"
     },
     "dependencies": {
@@ -30,6 +30,7 @@
         "gulp-autoprefixer": "^6.0.0",
         "mocha": "^6.0.2",
         "mochawesome": "^3.1.1",
-        "nyc": "^13.3.0"
+        "nyc": "^13.3.0",
+        "sinon": "^7.2.7"
     }
 }
